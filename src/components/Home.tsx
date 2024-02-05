@@ -91,7 +91,7 @@ const Home: React.FC = () => {
               className="light-purple-button custom-button"
               href="https://drive.google.com/file/d/1K4NAN0Gxx0IVx_bKdYeU4dh9994_jzgz/view?usp=sharing"
             >
-              GitHub
+              Resume
             </Button>
           </Col>
           <Col md={3} className="mb-5">
