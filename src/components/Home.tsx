@@ -79,14 +79,19 @@ const Home: React.FC = () => {
             </Button>
           </Col>
           <Col md={3} className="mb-5">
-            <Button className="light-purple-button custom-button">Email</Button>
-          </Col>
-          <Col md={3} className="mb-5">
             <Button
               className="light-purple-button custom-button"
               href="mailto:manavk@umich.edu"
             >
               Email
+            </Button>
+          </Col>
+          <Col md={3} className="mb-5">
+            <Button
+              className="light-purple-button custom-button"
+              href="https://drive.google.com/file/d/1K4NAN0Gxx0IVx_bKdYeU4dh9994_jzgz/view?usp=sharing"
+            >
+              GitHub
             </Button>
           </Col>
           <Col md={3} className="mb-5">
