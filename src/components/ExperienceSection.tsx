@@ -3,7 +3,6 @@
 import React from "react";
 
 const ExperienceSection: React.FC = () => {
-  const imagesPath = "src/components/images/";
   return (
     <section
       id="experience"
@@ -49,7 +48,7 @@ const ExperienceSection: React.FC = () => {
           }}
         >
           <img
-            src={imagesPath + "appimg.jpg"}
+            src="/appimg.jpg"
             alt="Experience 1"
             style={{
               width: "100%",
@@ -110,7 +109,7 @@ const ExperienceSection: React.FC = () => {
           }}
         >
           <img
-            src={imagesPath + "soliditycode.jpg"} // Replace with the actual image URL
+            src="/soliditycode.jpg"
             alt="Experience 2"
             style={{
               width: "100%",

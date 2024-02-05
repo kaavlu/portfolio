@@ -3,7 +3,6 @@
 import React from "react";
 
 const AboutSection: React.FC = () => {
-  const imagesPath = "src/components/images/";
   return (
     <section
       id="about"
@@ -76,23 +75,23 @@ const AboutSection: React.FC = () => {
         >
           {/* Update image sources based on your folder structure */}
           <img
-            src={`${imagesPath}/img3.jpg`}
-            alt="Your Image 1"
-            style={{ width: "100%", height: "250px", objectFit: "cover" }}
-          />
-          <img
-            src={`${imagesPath}/img4.jpg`}
-            alt="Your Image 2"
-            style={{ width: "100%", height: "250px", objectFit: "cover" }}
-          />
-          <img
-            src={`${imagesPath}/img1.jpg`}
+            src="/img3.jpg"
             alt="Your Image 3"
             style={{ width: "100%", height: "250px", objectFit: "cover" }}
           />
           <img
-            src={`${imagesPath}/img2.jpg`}
+            src="/img4.jpg"
             alt="Your Image 4"
+            style={{ width: "100%", height: "250px", objectFit: "cover" }}
+          />
+          <img
+            src="/img1.jpg"
+            alt="Your Image 1"
+            style={{ width: "100%", height: "250px", objectFit: "cover" }}
+          />
+          <img
+            src="/img2.jpg"
+            alt="Your Image 2"
             style={{ width: "100%", height: "250px", objectFit: "cover" }}
           />
         </div>

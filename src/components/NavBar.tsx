@@ -1,7 +1,7 @@
 // Navbar.tsx
 
 import React, { useState } from "react";
-import { Navbar, Nav, Container, Image } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 const NavBar: React.FC = () => {
   const navLinkMargin = "45px";
@@ -28,11 +28,7 @@ const NavBar: React.FC = () => {
     >
       <Container>
         <Navbar.Brand href="#home">
-          <Image
-            src="src/components/images/manavk.jpg"
-            alt="Your Logo"
-            style={{ maxHeight: "40px" }}
-          />
+          <img src="/manavk.jpg" style={{ maxHeight: "40px" }} alt="Example" />
         </Navbar.Brand>
 
         <Navbar.Toggle

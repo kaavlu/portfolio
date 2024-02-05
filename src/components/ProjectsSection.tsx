@@ -3,7 +3,6 @@
 import React from "react";
 
 const ProjectsSection: React.FC = () => {
-  const imagesPath = "src/components/images/";
   return (
     <section
       id="projects"
@@ -49,14 +48,14 @@ const ProjectsSection: React.FC = () => {
           }}
         >
           <img
-            src={imagesPath + "cvpic.png"}
-            alt="Project 1"
+            src="/cvpic.jpg"
             style={{
               width: "100%",
               height: "100%",
               objectFit: "cover",
               borderRadius: "10px",
             }}
+            alt="Example"
           />
           <div className="card-text">
             <h3
@@ -96,14 +95,14 @@ const ProjectsSection: React.FC = () => {
           }}
         >
           <img
-            src={imagesPath + "spark2code.png"} // Replace with the actual image URL
-            alt="Project 2"
+            src="/spark2code.jpg"
             style={{
               width: "100%",
               height: "100%",
               objectFit: "cover",
               borderRadius: "10px",
             }}
+            alt="Example"
           />
           <div className="card-text">
             <h3
@@ -159,14 +158,14 @@ const ProjectsSection: React.FC = () => {
           }}
         >
           <img
-            src={imagesPath + "colab.png"}
-            alt="Project 3"
+            src="/colab.jpg"
             style={{
               width: "100%",
               height: "100%",
               objectFit: "cover",
               borderRadius: "10px",
             }}
+            alt="Example"
           />
           <div className="card-text">
             <h3
@@ -209,14 +208,14 @@ const ProjectsSection: React.FC = () => {
           }}
         >
           <img
-            src={imagesPath + "mllc.jpg"} // Replace with the actual image URL
-            alt="Experience 2"
+            src="/mllc.jpg"
             style={{
               width: "100%",
               height: "100%",
               objectFit: "cover",
               borderRadius: "10px",
             }}
+            alt="Example"
           />
           <div className="card-text">
             <h3
