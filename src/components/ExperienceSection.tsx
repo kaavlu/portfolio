@@ -1,6 +1,7 @@
 // ExperienceSection.tsx
 
 import React from "react";
+import "./ExperienceSection.css";
 
 const ExperienceSection: React.FC = () => {
   return (
@@ -9,44 +10,17 @@ const ExperienceSection: React.FC = () => {
       className="text-center mt-4"
       style={{
         paddingTop: "80px",
-        marginLeft: "50px",
-        marginRight: "50px",
+        marginLeft: "10px",
+        marginRight: "10px",
         minHeight: "100vh",
       }}
     >
-      <h2
-        style={{
-          color: "white",
-          backgroundColor: "#6448E3",
-          padding: "10px",
-          textAlign: "left",
-          borderRadius: "5px",
-        }}
-      >
-        Experience
-      </h2>
+      <h2 className="experience-heading">Experience</h2>
 
       {/* Two cards layout */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          maxHeight: "75vh",
-          overflow: "hidden",
-        }}
-      >
+      <div className="experience-cards">
         {/* First Card */}
-        <div
-          className="experience-card"
-          style={{
-            width: "48%",
-            backgroundColor: "#6448E3",
-            padding: "20px",
-            borderRadius: "10px",
-            position: "relative",
-            overflow: "hidden",
-          }}
-        >
+        <div className="experience-card">
           <img
             src="/appimg.jpg"
             alt="Experience 1"
@@ -97,19 +71,9 @@ const ExperienceSection: React.FC = () => {
         </div>
 
         {/* Second Card */}
-        <div
-          className="experience-card"
-          style={{
-            width: "48%",
-            backgroundColor: "#6448E3",
-            padding: "20px",
-            borderRadius: "10px",
-            position: "relative",
-            overflow: "hidden",
-          }}
-        >
+        <div className="experience-card">
           <img
-            src="/soliditycode.jpg"
+            src="soliditycode.jpg"
             alt="Experience 2"
             style={{
               width: "100%",
@@ -154,6 +118,17 @@ const ExperienceSection: React.FC = () => {
           </div>
         </div>
       </div>
+      {/* Media query to adjust card width for smaller screens */}
+      <style>
+        {`
+          @media (max-width: 2000px) {
+            .experience-card {
+              width: 100%; // Set width to 100% for smaller screens
+              margin-bottom: 20px; // Add space between cards
+            }
+          }
+        `}
+      </style>
     </section>
   );
 };

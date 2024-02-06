@@ -2,11 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-// import linkedInIcon from "./images/linkedin-icon.png";
-// import githubIcon from "./images/github-icon.png";
-// import emailIcon from "./images/email-icon.png";
-// import resumeIcon from "./images/resume-icon.png";
-// import instagramIcon from "./images/instagram-icon.png";
+import { FaLinkedin, FaGithub, FaEnvelope, FaFileAlt } from "react-icons/fa";
+import "./Home.css";
 
 const Home: React.FC = () => {
   const [currentInterestIndex, setCurrentInterestIndex] = useState(0);
@@ -49,10 +46,7 @@ const Home: React.FC = () => {
       {/* Home Section */}
       <section
         id="home"
-        className="text-center d-flex flex-column justify-content-center align-items-center"
-        style={{
-          minHeight: "100vh",
-        }}
+        className="text-center d-flex flex-column justify-content-center align-items-center home-section"
       >
         <h1 className="text-dark" style={{ fontSize: "5rem" }}>
           Hey, I'm <span className="light-purple">Manav</span>!
@@ -60,14 +54,17 @@ const Home: React.FC = () => {
         <h1 className="text-dark" style={{ fontSize: "4rem" }}>
           {currentInterest}
         </h1>
-
+        <h1 className="text-dark" style={{ fontSize: "1rem" }}>
+          I'm pursuing a B.S.E in computer science at the University of
+          Michigan.
+        </h1>
         <Row className="justify-content-center mt-4">
           <Col md={3} className="mb-5">
             <Button
               className="light-purple-button custom-button"
               href="https://www.linkedin.com/in/manav-khanvilkar/"
             >
-              LinkedIn
+              <FaLinkedin />
             </Button>
           </Col>
           <Col md={3} className="mb-5">
@@ -75,7 +72,7 @@ const Home: React.FC = () => {
               className="light-purple-button custom-button"
               href="https://github.com/kaavlu"
             >
-              GitHub
+              <FaGithub />
             </Button>
           </Col>
           <Col md={3} className="mb-5">
@@ -83,7 +80,7 @@ const Home: React.FC = () => {
               className="light-purple-button custom-button"
               href="mailto:manavk@umich.edu"
             >
-              Email
+              <FaEnvelope />
             </Button>
           </Col>
           <Col md={3} className="mb-5">
@@ -91,11 +88,14 @@ const Home: React.FC = () => {
               className="light-purple-button custom-button"
               href="https://drive.google.com/file/d/1K4NAN0Gxx0IVx_bKdYeU4dh9994_jzgz/view?usp=sharing"
             >
-              Resume
+              <FaFileAlt />
             </Button>
           </Col>
-          <Col md={3} className="mb-5">
-            <Button href="#about" className="light-purple-button custom-button">
+          <Col className="d-flex justify-content-center mb-5">
+            <Button
+              href="#about"
+              className="light-purple-button custom-button-long"
+            >
               Learn About Me!
             </Button>
           </Col>

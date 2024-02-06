@@ -1,6 +1,7 @@
 // ProjectsSection.tsx
 
 import React from "react";
+import "./ProjectsSection.css";
 
 const ProjectsSection: React.FC = () => {
   return (
@@ -9,44 +10,17 @@ const ProjectsSection: React.FC = () => {
       className="text-center mt-4"
       style={{
         paddingTop: "80px",
-        marginLeft: "50px",
-        marginRight: "50px",
+        marginLeft: "10px",
+        marginRight: "10px",
         minHeight: "100vh",
       }}
     >
-      <h2
-        style={{
-          color: "white",
-          backgroundColor: "#6448E3",
-          padding: "10px",
-          textAlign: "right",
-          borderRadius: "5px",
-        }}
-      >
-        Projects
-      </h2>
+      <h2 className="projects-heading">Projects</h2>
 
       {/* Four cards layout */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          maxHeight: "75vh",
-          overflow: "hidden",
-        }}
-      >
+      <div className="projects-cards" style={{ marginBottom: "20px" }}>
         {/* First Card */}
-        <div
-          className="experience-card"
-          style={{
-            width: "48%",
-            backgroundColor: "#6448E3",
-            padding: "20px",
-            borderRadius: "10px",
-            position: "relative",
-            overflow: "hidden",
-          }}
-        >
+        <div className="experience-card projects-card">
           <img
             src="/cvpic.jpg"
             style={{
@@ -83,17 +57,7 @@ const ProjectsSection: React.FC = () => {
         </div>
 
         {/* Second Card */}
-        <div
-          className="experience-card"
-          style={{
-            width: "48%",
-            backgroundColor: "#6448E3",
-            padding: "20px",
-            borderRadius: "10px",
-            position: "relative",
-            overflow: "hidden",
-          }}
-        >
+        <div className="experience-card projects-card">
           <img
             src="/spark2code.jpg"
             style={{
@@ -136,27 +100,9 @@ const ProjectsSection: React.FC = () => {
         </div>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          maxHeight: "75vh",
-          paddingTop: "20px",
-          overflow: "hidden",
-        }}
-      >
+      <div className="projects-cards">
         {/* Third Card */}
-        <div
-          className="experience-card"
-          style={{
-            width: "48%",
-            backgroundColor: "#6448E3",
-            padding: "20px",
-            borderRadius: "10px",
-            position: "relative",
-            overflow: "hidden",
-          }}
-        >
+        <div className="experience-card projects-card">
           <img
             src="/colab.jpg"
             style={{
@@ -196,17 +142,7 @@ const ProjectsSection: React.FC = () => {
         </div>
 
         {/* Fourth Card */}
-        <div
-          className="experience-card"
-          style={{
-            width: "48%",
-            backgroundColor: "#6448E3",
-            padding: "20px",
-            borderRadius: "10px",
-            position: "relative",
-            overflow: "hidden",
-          }}
-        >
+        <div className="experience-card projects-card">
           <img
             src="/mllc.jpg"
             style={{

@@ -1,21 +1,13 @@
 // AboutSection.tsx
 
 import React from "react";
+import "./AboutSection.css";
 
 const AboutSection: React.FC = () => {
   return (
-    <section
-      id="about"
-      className="d-flex mt-4"
-      style={{
-        paddingTop: "110px",
-        marginLeft: "50px",
-        marginRight: "50px",
-        minHeight: "100vh",
-      }}
-    >
+    <section id="about" className="d-flex mt-4 about-section">
       {/* Left half for text */}
-      <div style={{ width: "50%" }}>
+      <div className="about-text">
         <h2
           style={{
             color: "white",
@@ -53,17 +45,7 @@ const AboutSection: React.FC = () => {
       </div>
 
       {/* Right half for images */}
-      {/* Right half for images */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          width: "50%",
-          marginLeft: "20px",
-          maxHeight: "100vh",
-          overflow: "hidden",
-        }}
-      >
+      <div className="about-images">
         <div
           style={{
             display: "grid",

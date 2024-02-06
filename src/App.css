@@ -18,7 +18,11 @@ body {
 .light-purple {
   color: #6448E3; /* Dark Purple text color */
 }
-
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /* Adjust as needed */
+}
 .light-purple-button {
   background-color: #6448E3 !important;
   color: #ffffff !important;
@@ -32,11 +36,33 @@ body {
 }
 
 .custom-button {
-width: 100%;
-text-align: center;
-margin-right: 15px;
-margin-top: 15px;
+  border-radius: 50% !important; /* Make the buttons circular */
+  width: 60px !important; /* Set the width of the circular buttons */
+  height: 60px !important; /* Set the height of the circular buttons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: relative;
 }
+
+.custom-button svg {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-button-long {
+  width: 120%; /* Adjust the width to make it wider */
+  max-width: 400px; /* Set a maximum width to prevent it from becoming too wide */
+  text-align: center;
+  margin: 15px auto; /* Center the button horizontally with auto margins */
+  border-radius: 50%; 
+}
+
 .custom-button2 {
   width: 100%;
   text-align: center;

@@ -1,0 +1,56 @@
+/* ProjectsSection.css */
+
+.projects-section {
+    padding-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: 100vh;
+}
+
+.projects-heading {
+    color: white;
+    background-color: #6448E3;
+    padding: 10px;
+    text-align: right;
+    border-radius: 5px;
+}
+
+.projects-cards {
+    display: flex;
+    justify-content: space-between;
+    max-height: 75vh;
+    overflow: hidden;
+}
+
+.projects-card {
+    width: 48%;
+    background-color: #6448E3;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .projects-cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        max-height: 280vh;
+    }
+
+    .projects-card {
+        flex-basis: 100%; /* Set width to 100% for smaller screens */
+        margin-bottom: 20px; /* Add space between cards */
+        min-height: 70vh; /* Adjust min-height as needed */
+        border-radius: 10px; /* Ensure rounded corners on all cards */
+    }
+
+    .projects-card:first-child {
+        border-top-left-radius: 10px; /* Remove top left border-radius from last card */
+        border-top-right-radius: 10px; /* Remove bottom right border-radius from first card */
+    }
+
+    .projects-card:last-child {
+        border-top-left-radius: 10px; /* Remove top left border-radius from last card */
+        border-top-right-radius: 10px; /* Remove top right border-radius from last card */
+    }
+}

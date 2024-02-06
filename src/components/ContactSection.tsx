@@ -9,13 +9,13 @@ const ContactSection: React.FC = () => {
       className="d-flex mt-4"
       style={{
         paddingTop: "110px",
-        marginLeft: "50px",
-        marginRight: "50px",
-        minHeight: "100vh",
+        marginLeft: "10px",
+        marginRight: "10px",
+        minHeight: "20vh",
       }}
     >
-      <div>
-        <h2
+      <div style={{ width: "100%" }}>
+        <h4
           style={{
             color: "white",
             backgroundColor: "#6448E3",
@@ -25,11 +25,8 @@ const ContactSection: React.FC = () => {
           }}
         >
           Contact
-        </h2>
-        <h3>
-          Contact me at manavk@umich.edu, 858-847-8020, or through any other
-          platform listed on the home page!
-        </h3>
+        </h4>
+        <h5>Contact me at manavk@umich.edu, 858-847-8020, or Linkedin!</h5>
       </div>
     </section>
   );
