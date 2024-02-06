@@ -31,9 +31,9 @@ const AboutSection: React.FC = () => {
           <br />
           At school, I am a software analyst for Atlas Digital where I perform
           tech consulting services for a variety of startups and established
-          companies across the US. I am also a (tentative) member of the
-          Robotics and Optimization for Analysis of Human Motion Laboratory
-          where I work on _.
+          companies across the US. I am also a new member of the Robotics and
+          Optimization for Analysis of Human Motion Laboratory where I work on
+          robot localization.
           <br />
           <br />
           Outside of school, I love working out, cooking new dishes, traveling
