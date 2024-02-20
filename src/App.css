@@ -56,10 +56,10 @@ body {
 }
 
 .custom-button-long {
-  width: 120%; /* Adjust the width to make it wider */
-  max-width: 400px; /* Set a maximum width to prevent it from becoming too wide */
+  width: 150%;
   text-align: center;
-  margin: 15px auto; /* Center the button horizontally with auto margins */
+  margin-right: 15px;
+  margin-top: 15px;
   border-radius: 50%; 
 }
 

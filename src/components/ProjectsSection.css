@@ -45,12 +45,12 @@
     }
 
     .projects-card:first-child {
-        border-top-left-radius: 10px; /* Remove top left border-radius from last card */
-        border-top-right-radius: 10px; /* Remove bottom right border-radius from first card */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
     .projects-card:last-child {
-        border-top-left-radius: 10px; /* Remove top left border-radius from last card */
-        border-top-right-radius: 10px; /* Remove top right border-radius from last card */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
     }
 }
